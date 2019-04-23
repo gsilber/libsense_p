@@ -5,7 +5,6 @@ This is a c library for the Raspberry Pi Sense Hat (Astro Pi).  It is designed t
   
 Installation:  
 	make: builds library libsense.a  
-	make examples: builds example programs for each sensor  
 	make clean: removes all  
 	make all: builds everything  
 	make install: installs in /usr/local/lib and /usr/local/include/sense  
@@ -35,5 +34,5 @@ Then call functions to manipulate that device as defined in the appropriate head
 	clearBitmap(buf->bitmap,getColor(255,0,0));  
 	freeFBDevice(buf);  
   
-There are detailed examples of each sensor in the example directory  
+
   
