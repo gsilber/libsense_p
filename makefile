@@ -41,6 +41,11 @@ uninstall:
 	rm -f /usr/local/lib/libsense.a
 	rm -fr /usr/local/include/sense
 
-all: lib 
+examples: lib
+	make -C example
+examples-clean:
+	make -C example clean
 
-clean: lib-clean 
+all: lib examples
+
+clean: lib-clean examples-clean
