@@ -11,8 +11,6 @@ all:
 	cp mag/mag bin/mag
 	make -C doomsday
 	cp doomsday/doomsday bin/doomsday
-	make -C binclock
-	cp binclock/binclock bin/binclock
 	make -C maze
 	cp maze/maze bin/maze
 	make -C joyshell
@@ -24,7 +22,6 @@ clean:
 	make -C gyro clean
 	make -C mag clean
 	make -C doomsday clean
-	make -C binclock clean
 	make -C maze clean
 	make -C joyshell clean
-	rm -f bin/simple bin/sensors bin/joystick bin/gyro bin/mag bin/doomsday bin/binclock bin/maze bin/joyshell
+	rm -f bin/simple bin/sensors bin/joystick bin/gyro bin/mag bin/doomsday bin/maze bin/joyshell
